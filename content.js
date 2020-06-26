@@ -1,55 +1,75 @@
 'use strict'
 
 
-var age = calculateAge("02/24/1991", "02/24/2010");
+function calculateAge(){
+    var internalAskAge = prompt('What is your age');
+    document.write('<h3>' + 'welcome '+ internalAskAge + '</h3>');
+    '<h1>Welcome</</h1>'
+    return internalAskAge;
+}
 
-var greeting;
-
-alert('Are You Over 21?');
-
-
-
-
-var calculateAge = prompt('Welcome To My Site!')
-calculateAge = parseInt(hourNow)
+// calculateAge(); // value of internalAskAge not the variable name
 
 
+// console.log(externalAskAge);
 
+function confirmCountinue(AskAge){ //the function is accepting a paramater
+    confirm(AskAge + " Awesome. A Bartendar will be with you shortly");
 
+}
 
-// calculateAge = 21
-// prompt = ''
+function checkAge(age){
+    if(age ==='yes'){
+        alert('Welcome aboard!'); 
+        var internalAskName = prompt('What is your name');
+        document.write('<h3>' + 'welcome '+ internalAskName + '</h3>');
+    }else {
 
-function calculateAge (birthDate, otherDate) {
-    birthDate = new Date(birthDate);
-    otherDate = new Date(otherDate);
-
-    var years = (otherDate.getFullYear() - birthDate.getFullYear());
-
-    if (otherDate.getMonth() < birthDate.getMonth() || 
-        otherDate.getMonth() == birthDate.getMonth() && otherDate.getDate() < birthDate.getDate()) {
-        years--;
+        alert('Comback when you turn 21!')
     }
 
-    return years;
 }
 
-
-
-
-if (calculateAge > 18)  {
-    prompt = 'Welcome!';
-}   else if (calculateAge > 12)  {
-    prompt = 'Dont Even Think About it!';
-}   else if (calculateAge >= 0)  {
-    prompt = 'No Way Jose!';
-}   else {
-   
-
+function verify(){
+    var verify;
+    verify = prompt('Are you 21?');
+    return verify
 
 }
 
+checkAge(verify())
 
-document.write('<h3>' + prompt + '</h3>');
 
-'21' === 21
+// function adopt(verifyQuestion){
+//     if(verify === 'no'){
+//         var adopt = prompt('You are not allowed to proceed');
+
+//         if(adopt === 'yes'){
+//             alert('Awesome. A Bartendar will be with you shorlty');
+//         } else if(adopt === 'no'){
+//             alert('Comeback when you are 21.');
+//         } else {
+               
+                
+//         }
+//     }
+// }
+
+
+
+// var externalAskAge  = calculateAge(); //value of internalAskAge not the variable name
+// confirmCountinue(externalAskAge); //this is passing an argument
+// var verifyQuestion = verify();
+// checkAge(verifyQuestion);
+// adopt(verifyQuestion);
+
+
+
+
+
+
+
+
+
+
+
