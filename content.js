@@ -30,6 +30,7 @@ function checkAge(age){
 
         alert('Comback when you turn 21!')
         ableToAdopt = false;
+        
     }
 
 }
@@ -44,10 +45,12 @@ function forceTest(){       // i++
             break;
         } else{
             alert("BOOOO You Suck. Try again")
+            
         }
     }
     if(i >2){
         ableToAdopt = false;
+        
     }
 
 }
@@ -60,9 +63,10 @@ function verify(){
 
 }
 
-checkAge(verify())
+// checkAge(verify())
 
-forceTest();
+
+// forceTest();
 
 
 // function adopt(verifyQuestion){
